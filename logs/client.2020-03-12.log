@@ -1,0 +1,51 @@
+2020-03-12 18:51:54,108 org.springframework.boot.SpringApplication [main] (SpringApplication.java:826) ERROR --> Application run failed
+java.lang.IllegalStateException: java.io.FileNotFoundException: E:\sources\fullmarks\src\main\resources\log4j.properties (系统找不到指定的路径。)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:324)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:288)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at cn.hlsxn.fullmarks.FullMarksApplication.main(FullMarksApplication.java:12)
+Caused by: java.io.FileNotFoundException: E:\sources\fullmarks\src\main\resources\log4j.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at java.net.URL.openStream(URL.java:1045)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:317)
+	... 14 more
+2020-03-12 18:53:19,414 cn.hlsxn.fullmarks.FullMarksApplication [main] (StartupInfoLogger.java:55) INFO  --> Starting FullMarksApplication on EO12W8904TI2WBB with PID 7436 (E:\sources\fullmarks\fullMarksServer\fullMarks-web\target\classes started by Administrator in E:\sources\fullmarks)
+2020-03-12 18:53:19,414 cn.hlsxn.fullmarks.FullMarksApplication [main] (SpringApplication.java:651) INFO  --> No active profile set, falling back to default profiles: default
+2020-03-12 18:53:21,206 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:92) INFO  --> Tomcat initialized with port(s): 8079 (http)
+2020-03-12 18:53:21,393 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:284) INFO  --> Root WebApplicationContext: initialization completed in 1932 ms
+2020-03-12 18:53:21,831 org.hibernate.validator.internal.util.Version [main] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.18.Final
+2020-03-12 18:53:22,904 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-12 18:53:23,544 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8079 (http) with context path ''
+2020-03-12 18:53:23,547 cn.hlsxn.fullmarks.FullMarksApplication [main] (StartupInfoLogger.java:61) INFO  --> Started FullMarksApplication in 4.571 seconds (JVM running for 7.339)
+2020-03-12 18:55:35,336 org.springframework.web.servlet.DispatcherServlet [http-nio-8079-exec-1] (FrameworkServlet.java:525) INFO  --> Initializing Servlet 'dispatcherServlet'
+2020-03-12 18:55:35,341 org.springframework.web.servlet.DispatcherServlet [http-nio-8079-exec-1] (FrameworkServlet.java:547) INFO  --> Completed initialization in 5 ms
+2020-03-12 19:05:43,529 cn.hlsxn.fullmarks.FullMarksApplication [main] (StartupInfoLogger.java:55) INFO  --> Starting FullMarksApplication on EO12W8904TI2WBB with PID 7676 (E:\sources\fullmarks\fullMarksServer\fullMarks-web\target\classes started by Administrator in E:\sources\fullmarks)
+2020-03-12 19:05:43,537 cn.hlsxn.fullmarks.FullMarksApplication [main] (SpringApplication.java:651) INFO  --> No active profile set, falling back to default profiles: default
+2020-03-12 19:05:45,812 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:92) INFO  --> Tomcat initialized with port(s): 8079 (http)
+2020-03-12 19:05:46,112 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:284) INFO  --> Root WebApplicationContext: initialization completed in 2474 ms
+2020-03-12 19:05:47,425 org.hibernate.validator.internal.util.Version [main] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.18.Final
+2020-03-12 19:05:47,925 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-12 19:05:48,279 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8079 (http) with context path ''
+2020-03-12 19:05:48,283 cn.hlsxn.fullmarks.FullMarksApplication [main] (StartupInfoLogger.java:61) INFO  --> Started FullMarksApplication in 5.374 seconds (JVM running for 9.595)
+2020-03-12 19:05:59,831 org.springframework.web.servlet.DispatcherServlet [http-nio-8079-exec-1] (FrameworkServlet.java:525) INFO  --> Initializing Servlet 'dispatcherServlet'
+2020-03-12 19:05:59,845 org.springframework.web.servlet.DispatcherServlet [http-nio-8079-exec-1] (FrameworkServlet.java:547) INFO  --> Completed initialization in 14 ms
+2020-03-12 19:06:39,755 com.zaxxer.hikari.HikariDataSource [http-nio-8079-exec-8] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
+2020-03-12 19:06:39,757 com.zaxxer.hikari.util.DriverDataSource [http-nio-8079-exec-8] (DriverDataSource.java:70) WARN  --> Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-03-12 19:06:40,010 com.zaxxer.hikari.HikariDataSource [http-nio-8079-exec-8] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
+2020-03-12 20:34:57,315 com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] (HikariPool.java:779) WARN  --> HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49m16s906ms394µs500ns).

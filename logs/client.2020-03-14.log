@@ -1,0 +1,212 @@
+2020-03-14 14:44:05,942 cn.hlsxn.fullmarks.FullMarksApplication [main] (StartupInfoLogger.java:55) INFO  --> Starting FullMarksApplication on EO12W8904TI2WBB with PID 18388 (E:\sources\fullmarks\fullMarksServer\fullMarks-web\target\classes started by Administrator in E:\sources\fullmarks)
+2020-03-14 14:44:05,995 cn.hlsxn.fullmarks.FullMarksApplication [main] (SpringApplication.java:651) INFO  --> No active profile set, falling back to default profiles: default
+2020-03-14 14:44:08,894 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:92) INFO  --> Tomcat initialized with port(s): 8079 (http)
+2020-03-14 14:44:09,152 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:284) INFO  --> Root WebApplicationContext: initialization completed in 3089 ms
+2020-03-14 14:44:18,119 org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] (AbstractApplicationContext.java:558) WARN  --> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'roleMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.hlsxn.fullmarks.mapper.RoleMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-03-14 14:44:18,177 org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] (ConditionEvaluationReportLoggingListener.java:136) INFO  --> 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-14 14:44:18,447 org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] (LoggingFailureAnalysisReporter.java:40) ERROR --> 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field roleMapper in cn.hlsxn.fullmarks.service.UserService required a bean of type 'cn.hlsxn.fullmarks.mapper.RoleMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'cn.hlsxn.fullmarks.mapper.RoleMapper' in your configuration.
+
+2020-03-14 14:46:00,337 cn.hlsxn.fullmarks.FullMarksApplication [main] (StartupInfoLogger.java:55) INFO  --> Starting FullMarksApplication on EO12W8904TI2WBB with PID 16324 (E:\sources\fullmarks\fullMarksServer\fullMarks-web\target\classes started by Administrator in E:\sources\fullmarks)
+2020-03-14 14:46:00,341 cn.hlsxn.fullmarks.FullMarksApplication [main] (SpringApplication.java:651) INFO  --> No active profile set, falling back to default profiles: default
+2020-03-14 14:46:02,429 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:92) INFO  --> Tomcat initialized with port(s): 8079 (http)
+2020-03-14 14:46:02,816 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:284) INFO  --> Root WebApplicationContext: initialization completed in 2395 ms
+2020-03-14 14:46:03,314 org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] (AbstractApplicationContext.java:558) WARN  --> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customFilterInvocationSecurityMetadataSource': Unsatisfied dependency expressed through field 'permissionService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.hlsxn.fullmarks.service.PermissionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-03-14 14:46:03,328 org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] (ConditionEvaluationReportLoggingListener.java:136) INFO  --> 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-14 14:46:03,565 org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] (LoggingFailureAnalysisReporter.java:40) ERROR --> 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field permissionService in cn.hlsxn.fullmarks.controller.config.CustomFilterInvocationSecurityMetadataSource required a bean of type 'cn.hlsxn.fullmarks.service.PermissionService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'cn.hlsxn.fullmarks.service.PermissionService' in your configuration.
+
+2020-03-14 14:47:09,214 cn.hlsxn.fullmarks.FullMarksApplication [main] (StartupInfoLogger.java:55) INFO  --> Starting FullMarksApplication on EO12W8904TI2WBB with PID 10208 (E:\sources\fullmarks\fullMarksServer\fullMarks-web\target\classes started by Administrator in E:\sources\fullmarks)
+2020-03-14 14:47:09,217 cn.hlsxn.fullmarks.FullMarksApplication [main] (SpringApplication.java:651) INFO  --> No active profile set, falling back to default profiles: default
+2020-03-14 14:47:11,836 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:92) INFO  --> Tomcat initialized with port(s): 8079 (http)
+2020-03-14 14:47:12,069 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:284) INFO  --> Root WebApplicationContext: initialization completed in 2776 ms
+2020-03-14 14:47:16,266 org.hibernate.validator.internal.util.Version [main] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.18.Final
+2020-03-14 14:47:17,048 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-14 14:47:17,563 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/login'], []
+2020-03-14 14:47:17,563 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/kaptcha'], []
+2020-03-14 14:47:17,563 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/css/**'], []
+2020-03-14 14:47:17,564 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/js/**'], []
+2020-03-14 14:47:17,564 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/index.html'], []
+2020-03-14 14:47:17,564 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/img/**'], []
+2020-03-14 14:47:17,564 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-03-14 14:47:17,565 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-03-14 14:47:17,603 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d7a9786, org.springframework.security.web.context.SecurityContextPersistenceFilter@7a360554, org.springframework.security.web.header.HeaderWriterFilter@4cbc2e3b, org.springframework.security.web.authentication.logout.LogoutFilter@136965e3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@33ecbd6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4bc33720, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@480ad82c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7bab5898, org.springframework.security.web.session.SessionManagementFilter@765ffb14, org.springframework.security.web.access.ExceptionTranslationFilter@6192a5d5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2da66a44]
+2020-03-14 14:47:17,698 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8079 (http) with context path ''
+2020-03-14 14:47:17,714 cn.hlsxn.fullmarks.FullMarksApplication [main] (StartupInfoLogger.java:61) INFO  --> Started FullMarksApplication in 9.498 seconds (JVM running for 13.89)
+2020-03-14 14:57:30,514 org.springframework.web.servlet.DispatcherServlet [http-nio-8079-exec-1] (FrameworkServlet.java:525) INFO  --> Initializing Servlet 'dispatcherServlet'
+2020-03-14 14:57:30,558 org.springframework.web.servlet.DispatcherServlet [http-nio-8079-exec-1] (FrameworkServlet.java:547) INFO  --> Completed initialization in 44 ms
+2020-03-14 15:58:23,085 com.zaxxer.hikari.HikariDataSource [http-nio-8079-exec-3] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
+2020-03-14 15:58:23,095 com.zaxxer.hikari.util.DriverDataSource [http-nio-8079-exec-3] (DriverDataSource.java:70) WARN  --> Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-03-14 15:58:23,655 com.zaxxer.hikari.HikariDataSource [http-nio-8079-exec-3] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
+2020-03-14 15:58:23,967 cn.hlsxn.fullmarks.controller.config.SecurityConfig [http-nio-8079-exec-3] (SecurityConfig.java:109) INFO  --> Bad credentials
+2020-03-14 15:58:23,968 cn.hlsxn.fullmarks.controller.config.SecurityConfig [http-nio-8079-exec-3] (SecurityConfig.java:110) INFO  --> Bad credentials
+2020-03-14 16:00:54,579 com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] (HikariPool.java:779) WARN  --> HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m665ms698µs800ns).
+2020-03-14 16:17:04,230 cn.hlsxn.fullmarks.FullMarksApplication [main] (StartupInfoLogger.java:55) INFO  --> Starting FullMarksApplication on EO12W8904TI2WBB with PID 21240 (E:\sources\fullmarks\fullMarksServer\fullMarks-web\target\classes started by Administrator in E:\sources\fullmarks)
+2020-03-14 16:17:04,230 cn.hlsxn.fullmarks.FullMarksApplication [main] (SpringApplication.java:651) INFO  --> No active profile set, falling back to default profiles: default
+2020-03-14 16:17:07,276 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:92) INFO  --> Tomcat initialized with port(s): 8079 (http)
+2020-03-14 16:17:07,448 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:284) INFO  --> Root WebApplicationContext: initialization completed in 3156 ms
+2020-03-14 16:17:11,244 org.hibernate.validator.internal.util.Version [main] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.18.Final
+2020-03-14 16:17:11,603 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-14 16:17:11,931 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/login'], []
+2020-03-14 16:17:11,931 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/kaptcha'], []
+2020-03-14 16:17:11,931 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/css/**'], []
+2020-03-14 16:17:11,931 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/js/**'], []
+2020-03-14 16:17:11,931 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/index.html'], []
+2020-03-14 16:17:11,931 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/img/**'], []
+2020-03-14 16:17:11,931 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-03-14 16:17:11,931 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-03-14 16:17:11,962 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d7a9786, org.springframework.security.web.context.SecurityContextPersistenceFilter@7a360554, org.springframework.security.web.header.HeaderWriterFilter@4cbc2e3b, org.springframework.security.web.authentication.logout.LogoutFilter@136965e3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@33ecbd6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4bc33720, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@480ad82c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7bab5898, org.springframework.security.web.session.SessionManagementFilter@765ffb14, org.springframework.security.web.access.ExceptionTranslationFilter@6192a5d5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2da66a44]
+2020-03-14 16:17:12,025 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8079 (http) with context path ''
+2020-03-14 16:17:12,040 cn.hlsxn.fullmarks.FullMarksApplication [main] (StartupInfoLogger.java:61) INFO  --> Started FullMarksApplication in 8.3 seconds (JVM running for 11.279)
+2020-03-14 17:36:39,110 org.springframework.web.servlet.DispatcherServlet [http-nio-8079-exec-1] (FrameworkServlet.java:525) INFO  --> Initializing Servlet 'dispatcherServlet'
+2020-03-14 17:36:39,185 org.springframework.web.servlet.DispatcherServlet [http-nio-8079-exec-1] (FrameworkServlet.java:547) INFO  --> Completed initialization in 73 ms
+2020-03-14 17:36:42,603 com.zaxxer.hikari.HikariDataSource [http-nio-8079-exec-2] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
+2020-03-14 17:36:42,607 com.zaxxer.hikari.util.DriverDataSource [http-nio-8079-exec-2] (DriverDataSource.java:70) WARN  --> Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-03-14 17:36:42,836 com.zaxxer.hikari.HikariDataSource [http-nio-8079-exec-2] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
+2020-03-14 17:36:43,218 cn.hlsxn.fullmarks.controller.config.SecurityConfig [http-nio-8079-exec-2] (SecurityConfig.java:109) INFO  --> Bad credentials
+2020-03-14 17:36:43,218 cn.hlsxn.fullmarks.controller.config.SecurityConfig [http-nio-8079-exec-2] (SecurityConfig.java:110) INFO  --> Bad credentials
+2020-03-14 17:37:43,289 cn.hlsxn.fullmarks.controller.config.SecurityConfig [http-nio-8079-exec-4] (SecurityConfig.java:109) INFO  --> Bad credentials
+2020-03-14 17:37:43,289 cn.hlsxn.fullmarks.controller.config.SecurityConfig [http-nio-8079-exec-4] (SecurityConfig.java:110) INFO  --> Bad credentials
+2020-03-14 17:42:08,297 cn.hlsxn.fullmarks.FullMarksApplication [main] (StartupInfoLogger.java:55) INFO  --> Starting FullMarksApplication on EO12W8904TI2WBB with PID 4496 (E:\sources\fullmarks\fullMarksServer\fullMarks-web\target\classes started by Administrator in E:\sources\fullmarks)
+2020-03-14 17:42:08,299 cn.hlsxn.fullmarks.FullMarksApplication [main] (SpringApplication.java:651) INFO  --> No active profile set, falling back to default profiles: default
+2020-03-14 17:42:10,702 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:92) INFO  --> Tomcat initialized with port(s): 8079 (http)
+2020-03-14 17:42:10,970 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:284) INFO  --> Root WebApplicationContext: initialization completed in 2586 ms
+2020-03-14 17:42:16,078 org.hibernate.validator.internal.util.Version [main] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.18.Final
+2020-03-14 17:42:16,578 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-14 17:42:17,185 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/login'], []
+2020-03-14 17:42:17,185 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/kaptcha'], []
+2020-03-14 17:42:17,186 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/css/**'], []
+2020-03-14 17:42:17,186 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/js/**'], []
+2020-03-14 17:42:17,186 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/index.html'], []
+2020-03-14 17:42:17,186 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/img/**'], []
+2020-03-14 17:42:17,186 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-03-14 17:42:17,186 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-03-14 17:42:17,218 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bab5898, org.springframework.security.web.context.SecurityContextPersistenceFilter@424de326, org.springframework.security.web.header.HeaderWriterFilter@2975a9e, org.springframework.security.web.authentication.logout.LogoutFilter@53c6f96d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5c723f2d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2dd0f797, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d18b73a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@366d8b97, org.springframework.security.web.session.SessionManagementFilter@57562473, org.springframework.security.web.access.ExceptionTranslationFilter@3722c145, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@527fc8e]
+2020-03-14 17:42:17,335 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8079 (http) with context path ''
+2020-03-14 17:42:17,339 cn.hlsxn.fullmarks.FullMarksApplication [main] (StartupInfoLogger.java:61) INFO  --> Started FullMarksApplication in 9.672 seconds (JVM running for 13.405)
+2020-03-14 17:42:34,677 org.springframework.web.servlet.DispatcherServlet [http-nio-8079-exec-1] (FrameworkServlet.java:525) INFO  --> Initializing Servlet 'dispatcherServlet'
+2020-03-14 17:42:34,695 org.springframework.web.servlet.DispatcherServlet [http-nio-8079-exec-1] (FrameworkServlet.java:547) INFO  --> Completed initialization in 18 ms
+2020-03-14 17:42:34,929 com.zaxxer.hikari.HikariDataSource [http-nio-8079-exec-1] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
+2020-03-14 17:42:34,931 com.zaxxer.hikari.util.DriverDataSource [http-nio-8079-exec-1] (DriverDataSource.java:70) WARN  --> Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-03-14 17:42:35,179 com.zaxxer.hikari.HikariDataSource [http-nio-8079-exec-1] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
+2020-03-14 17:42:35,397 cn.hlsxn.fullmarks.controller.config.SecurityConfig [http-nio-8079-exec-1] (SecurityConfig.java:109) INFO  --> Bad credentials
+2020-03-14 17:42:35,397 cn.hlsxn.fullmarks.controller.config.SecurityConfig [http-nio-8079-exec-1] (SecurityConfig.java:110) INFO  --> Bad credentials
+2020-03-14 17:42:53,180 cn.hlsxn.fullmarks.controller.config.SecurityConfig [http-nio-8079-exec-2] (SecurityConfig.java:109) INFO  --> Bad credentials
+2020-03-14 17:42:53,181 cn.hlsxn.fullmarks.controller.config.SecurityConfig [http-nio-8079-exec-2] (SecurityConfig.java:110) INFO  --> Bad credentials
+2020-03-14 17:45:34,643 cn.hlsxn.fullmarks.FullMarksApplication [main] (StartupInfoLogger.java:55) INFO  --> Starting FullMarksApplication on EO12W8904TI2WBB with PID 10912 (E:\sources\fullmarks\fullMarksServer\fullMarks-web\target\classes started by Administrator in E:\sources\fullmarks)
+2020-03-14 17:45:34,645 cn.hlsxn.fullmarks.FullMarksApplication [main] (SpringApplication.java:651) INFO  --> No active profile set, falling back to default profiles: default
+2020-03-14 17:45:37,320 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:92) INFO  --> Tomcat initialized with port(s): 8079 (http)
+2020-03-14 17:45:37,688 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:284) INFO  --> Root WebApplicationContext: initialization completed in 2966 ms
+2020-03-14 17:45:38,836 org.hibernate.validator.internal.util.Version [main] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.18.Final
+2020-03-14 17:45:43,130 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-14 17:45:43,655 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/login'], []
+2020-03-14 17:45:43,655 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/kaptcha'], []
+2020-03-14 17:45:43,655 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/css/**'], []
+2020-03-14 17:45:43,655 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/js/**'], []
+2020-03-14 17:45:43,655 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/index.html'], []
+2020-03-14 17:45:43,656 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/img/**'], []
+2020-03-14 17:45:43,656 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-03-14 17:45:43,658 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-03-14 17:45:43,704 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@571a01f9, org.springframework.security.web.context.SecurityContextPersistenceFilter@4a7fd0c9, org.springframework.security.web.header.HeaderWriterFilter@424de326, org.springframework.security.web.authentication.logout.LogoutFilter@7f93dd4e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@366d8b97, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3291b443, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44032fde, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d7109be, org.springframework.security.web.session.SessionManagementFilter@2dd0f797, org.springframework.security.web.access.ExceptionTranslationFilter@57562473, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@862f408]
+2020-03-14 17:45:43,807 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8079 (http) with context path ''
+2020-03-14 17:45:43,817 cn.hlsxn.fullmarks.FullMarksApplication [main] (StartupInfoLogger.java:61) INFO  --> Started FullMarksApplication in 9.844 seconds (JVM running for 14.021)
+2020-03-14 17:46:42,858 org.springframework.web.servlet.DispatcherServlet [http-nio-8079-exec-1] (FrameworkServlet.java:525) INFO  --> Initializing Servlet 'dispatcherServlet'
+2020-03-14 17:46:42,878 org.springframework.web.servlet.DispatcherServlet [http-nio-8079-exec-1] (FrameworkServlet.java:547) INFO  --> Completed initialization in 20 ms
+2020-03-14 17:46:43,130 com.zaxxer.hikari.HikariDataSource [http-nio-8079-exec-1] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
+2020-03-14 17:46:43,137 com.zaxxer.hikari.util.DriverDataSource [http-nio-8079-exec-1] (DriverDataSource.java:70) WARN  --> Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-03-14 17:46:43,340 com.zaxxer.hikari.HikariDataSource [http-nio-8079-exec-1] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
+2020-03-14 17:46:43,536 cn.hlsxn.fullmarks.controller.config.SecurityConfig [http-nio-8079-exec-1] (SecurityConfig.java:109) INFO  --> Bad credentials
+2020-03-14 17:46:43,536 cn.hlsxn.fullmarks.controller.config.SecurityConfig [http-nio-8079-exec-1] (SecurityConfig.java:110) INFO  --> Bad credentials
+2020-03-14 17:48:10,526 cn.hlsxn.fullmarks.FullMarksApplication [main] (StartupInfoLogger.java:55) INFO  --> Starting FullMarksApplication on EO12W8904TI2WBB with PID 6208 (E:\sources\fullmarks\fullMarksServer\fullMarks-web\target\classes started by Administrator in E:\sources\fullmarks)
+2020-03-14 17:48:10,529 cn.hlsxn.fullmarks.FullMarksApplication [main] (SpringApplication.java:651) INFO  --> No active profile set, falling back to default profiles: default
+2020-03-14 17:48:13,101 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:92) INFO  --> Tomcat initialized with port(s): 8079 (http)
+2020-03-14 17:48:13,471 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:284) INFO  --> Root WebApplicationContext: initialization completed in 2866 ms
+2020-03-14 17:48:18,155 org.hibernate.validator.internal.util.Version [main] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.18.Final
+2020-03-14 17:48:18,690 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-14 17:48:19,193 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/login'], []
+2020-03-14 17:48:19,193 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/kaptcha'], []
+2020-03-14 17:48:19,194 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/css/**'], []
+2020-03-14 17:48:19,194 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/js/**'], []
+2020-03-14 17:48:19,194 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/index.html'], []
+2020-03-14 17:48:19,194 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/img/**'], []
+2020-03-14 17:48:19,194 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-03-14 17:48:19,194 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-03-14 17:48:19,239 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d7109be, org.springframework.security.web.context.SecurityContextPersistenceFilter@18578491, org.springframework.security.web.header.HeaderWriterFilter@4bc33720, org.springframework.security.web.authentication.logout.LogoutFilter@5ad5be4a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@feb98ef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@671c4166, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b676112, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e0ec41f, org.springframework.security.web.session.SessionManagementFilter@67064bdc, org.springframework.security.web.access.ExceptionTranslationFilter@7a360554, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@178f268a]
+2020-03-14 17:48:19,362 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8079 (http) with context path ''
+2020-03-14 17:48:19,371 cn.hlsxn.fullmarks.FullMarksApplication [main] (StartupInfoLogger.java:61) INFO  --> Started FullMarksApplication in 9.554 seconds (JVM running for 13.971)
+2020-03-14 17:48:51,582 org.springframework.web.servlet.DispatcherServlet [http-nio-8079-exec-1] (FrameworkServlet.java:525) INFO  --> Initializing Servlet 'dispatcherServlet'
+2020-03-14 17:48:51,611 org.springframework.web.servlet.DispatcherServlet [http-nio-8079-exec-1] (FrameworkServlet.java:547) INFO  --> Completed initialization in 29 ms
+2020-03-14 17:48:51,852 com.zaxxer.hikari.HikariDataSource [http-nio-8079-exec-1] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
+2020-03-14 17:48:51,853 com.zaxxer.hikari.util.DriverDataSource [http-nio-8079-exec-1] (DriverDataSource.java:70) WARN  --> Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-03-14 17:48:52,063 com.zaxxer.hikari.HikariDataSource [http-nio-8079-exec-1] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
+2020-03-14 17:48:52,266 cn.hlsxn.fullmarks.controller.config.SecurityConfig [http-nio-8079-exec-1] (SecurityConfig.java:109) INFO  --> Bad credentials
+2020-03-14 17:48:52,266 cn.hlsxn.fullmarks.controller.config.SecurityConfig [http-nio-8079-exec-1] (SecurityConfig.java:110) INFO  --> Bad credentials
+2020-03-14 17:50:58,940 cn.hlsxn.fullmarks.controller.config.SecurityConfig [http-nio-8079-exec-2] (SecurityConfig.java:109) INFO  --> Bad credentials
+2020-03-14 17:50:58,941 cn.hlsxn.fullmarks.controller.config.SecurityConfig [http-nio-8079-exec-2] (SecurityConfig.java:110) INFO  --> Bad credentials
+2020-03-14 17:53:37,228 cn.hlsxn.fullmarks.FullMarksApplication [main] (StartupInfoLogger.java:55) INFO  --> Starting FullMarksApplication on EO12W8904TI2WBB with PID 5468 (E:\sources\fullmarks\fullMarksServer\fullMarks-web\target\classes started by Administrator in E:\sources\fullmarks)
+2020-03-14 17:53:37,243 cn.hlsxn.fullmarks.FullMarksApplication [main] (SpringApplication.java:651) INFO  --> No active profile set, falling back to default profiles: default
+2020-03-14 17:53:38,899 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:92) INFO  --> Tomcat initialized with port(s): 8079 (http)
+2020-03-14 17:53:39,102 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:284) INFO  --> Root WebApplicationContext: initialization completed in 1812 ms
+2020-03-14 17:53:39,977 org.hibernate.validator.internal.util.Version [main] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.18.Final
+2020-03-14 17:53:40,399 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-14 17:53:41,399 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/login'], []
+2020-03-14 17:53:41,399 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/kaptcha'], []
+2020-03-14 17:53:41,399 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/css/**'], []
+2020-03-14 17:53:41,399 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/js/**'], []
+2020-03-14 17:53:41,477 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/index.html'], []
+2020-03-14 17:53:41,477 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/img/**'], []
+2020-03-14 17:53:41,477 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-03-14 17:53:41,477 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-03-14 17:53:41,508 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25673087, org.springframework.security.web.context.SecurityContextPersistenceFilter@480ad82c, org.springframework.security.web.header.HeaderWriterFilter@3291b443, org.springframework.security.web.authentication.logout.LogoutFilter@1d1cbd0f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@f4a3a8d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@177515d1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@435cc7f9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b27e8f4, org.springframework.security.web.session.SessionManagementFilter@53d13cd4, org.springframework.security.web.access.ExceptionTranslationFilter@4a7fd0c9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7bab5898]
+2020-03-14 17:53:41,586 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8079 (http) with context path ''
+2020-03-14 17:53:41,586 cn.hlsxn.fullmarks.FullMarksApplication [main] (StartupInfoLogger.java:61) INFO  --> Started FullMarksApplication in 4.796 seconds (JVM running for 7.334)
+2020-03-14 17:54:01,058 org.springframework.web.servlet.DispatcherServlet [http-nio-8079-exec-1] (FrameworkServlet.java:525) INFO  --> Initializing Servlet 'dispatcherServlet'
+2020-03-14 17:54:01,125 org.springframework.web.servlet.DispatcherServlet [http-nio-8079-exec-1] (FrameworkServlet.java:547) INFO  --> Completed initialization in 67 ms
+2020-03-14 17:54:01,367 com.zaxxer.hikari.HikariDataSource [http-nio-8079-exec-1] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
+2020-03-14 17:54:01,368 com.zaxxer.hikari.util.DriverDataSource [http-nio-8079-exec-1] (DriverDataSource.java:70) WARN  --> Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-03-14 17:54:01,584 com.zaxxer.hikari.HikariDataSource [http-nio-8079-exec-1] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
+2020-03-14 17:54:01,774 cn.hlsxn.fullmarks.controller.config.SecurityConfig [http-nio-8079-exec-1] (SecurityConfig.java:110) INFO  --> Bad credentials
+2020-03-14 17:54:01,774 cn.hlsxn.fullmarks.controller.config.SecurityConfig [http-nio-8079-exec-1] (SecurityConfig.java:111) INFO  --> Bad credentials
+2020-03-14 17:54:01,776 cn.hlsxn.fullmarks.controller.config.SecurityConfig [http-nio-8079-exec-1] (SecurityConfig.java:114) INFO  --> 登录失败:org.springframework.security.authentication.BadCredentialsException: Bad credentials
+2020-03-14 17:55:28,004 cn.hlsxn.fullmarks.service.UserService [http-nio-8079-exec-8] (UserService.java:69) INFO  --> 登錄用戶:User{uid=1, username='dddddddd', unumber=15212341234, uemail='1234@qq.com', uuid='ldfksajfadsnfkladjfoij1p3092ld', ustatus=1, uname='1421', uface='null', ugrade=200, ugold=0, roles=[Role{rid=1, roleName='ROLE_COMMON', roleDesc='普通玩家'}]}
+2020-03-14 17:55:28,279 cn.hlsxn.fullmarks.controller.config.SecurityConfig [http-nio-8079-exec-8] (SecurityConfig.java:98) INFO  --> user:User{uid=1, username='dddddddd', unumber=15212341234, uemail='1234@qq.com', uuid='ldfksajfadsnfkladjfoij1p3092ld', ustatus=1, uname='1421', uface='null', ugrade=200, ugold=0, roles=[Role{rid=1, roleName='ROLE_COMMON', roleDesc='普通玩家'}]}
+2020-03-14 19:39:04,771 com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] (HikariPool.java:779) WARN  --> HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m1s510ms525µs700ns).
+2020-03-14 20:32:48,936 com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] (HikariPool.java:779) WARN  --> HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m11s242ms48µs).
+2020-03-14 21:17:20,906 com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] (HikariPool.java:779) WARN  --> HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m31s787ms7µs900ns).
+2020-03-14 22:17:39,279 com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] (HikariPool.java:779) WARN  --> HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=40m18s29ms658µs700ns).
+2020-03-14 23:07:06,714 com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] (HikariPool.java:779) WARN  --> HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m27s113ms684µs600ns).
+2020-03-14 23:30:04,808 com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] (HikariPool.java:779) WARN  --> HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m57s766ms315µs100ns).
