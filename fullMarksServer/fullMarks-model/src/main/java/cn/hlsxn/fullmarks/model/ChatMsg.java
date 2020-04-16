@@ -8,6 +8,7 @@ public class ChatMsg {
     private String content;
     private Date date;
     private String fromNickname;
+    private int type;//消息类型 0 玩家加入
 
     @Override
     public String toString() {

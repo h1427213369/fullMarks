@@ -3,7 +3,6 @@ package cn.hlsxn.fullmarks.controller.config;
 import cn.hlsxn.fullmarks.model.Permission;
 import cn.hlsxn.fullmarks.model.Role;
 import cn.hlsxn.fullmarks.service.PermissionService;
-import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.ConfigAttribute;
 import org.springframework.security.web.FilterInvocation;
@@ -17,7 +16,6 @@ import java.util.List;
 
 @Component
 public class CustomFilterInvocationSecurityMetadataSource implements FilterInvocationSecurityMetadataSource {
-    Logger log = Logger.getLogger(CustomFilterInvocationSecurityMetadataSource.class);
 
     @Autowired
     PermissionService permissionService;
@@ -37,7 +35,6 @@ public class CustomFilterInvocationSecurityMetadataSource implements FilterInvoc
                 return SecurityConfig.createList(str);
             }
         }
-        log.info(permissions.size());
         return SecurityConfig.createList("ROLE_LOGIN");
     }
 

@@ -22,7 +22,6 @@ public class RoomController {
 
     @PostMapping("/create")
     public RespBean create(Authentication authentication,@RequestBody Room room){
-        System.out.println("===========room:"+room);
         return roomService.create(authentication,room);
     }
 }

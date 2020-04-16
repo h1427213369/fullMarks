@@ -4,9 +4,9 @@ import cn.hlsxn.fullmarks.mapper.RoleMapper;
 import cn.hlsxn.fullmarks.mapper.UserMapper;
 import cn.hlsxn.fullmarks.model.RespBean;
 import cn.hlsxn.fullmarks.model.User;
+import cn.hlsxn.fullmarks.model.UserFriend;
 import cn.hlsxn.fullmarks.utils.MailUtils;
 import cn.hlsxn.fullmarks.utils.UuidUtil;
-import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -19,7 +19,6 @@ import java.util.List;
 
 @Service
 public class UserService implements UserDetailsService {
-    private Logger log = Logger.getLogger(UserService.class);
     @Autowired
     private UserMapper userMapper;
     @Autowired
@@ -67,5 +66,23 @@ public class UserService implements UserDetailsService {
         }
         user.setRoles(roleMapper.getByUid(user.getUid()));
         return user;
+    }
+
+    /**
+     * 查找当前登陆玩家信息
+     * @param username
+     * @return
+     */
+    public UserFriend getRoomUser(String username) {
+        return userMapper.getRoomUser(username);
+    }
+
+    /**
+     * 查找玩家好友
+     * @param uid
+     * @return
+     */
+    public List<UserFriend> getFriends(Integer uid) {
+        return userMapper.getFriends(uid);
     }
 }

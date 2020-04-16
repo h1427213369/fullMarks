@@ -5,7 +5,6 @@ import cn.hlsxn.fullmarks.model.RespBean;
 import cn.hlsxn.fullmarks.model.User;
 import cn.hlsxn.fullmarks.service.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -36,7 +35,6 @@ import java.io.PrintWriter;
  */
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-    private Logger log = Logger.getLogger(SecurityConfig.class);
 
     @Autowired
     UserService userService;
@@ -106,11 +104,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .failureHandler(new AuthenticationFailureHandler() {
                     @Override
                     public void onAuthenticationFailure(HttpServletRequest req, HttpServletResponse resp, AuthenticationException exception) throws IOException, ServletException {
-                        log.info(exception.getMessage());
-                        log.info(exception.getLocalizedMessage());
+//                        log.info(exception.getMessage());
+//                        log.info(exception.getLocalizedMessage());
                         resp.setContentType("application/json;charset=utf-8");
                         PrintWriter out = resp.getWriter();
-                        log.info("登录失败:" + exception);
+//                        log.info("登录失败:" + exception);
                         RespBean respBean = RespBean.error("登录失败!");
                         if (exception instanceof LockedException) {
                             respBean.setMsg("账户被锁定，请联系管理员!");

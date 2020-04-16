@@ -21,6 +21,7 @@ public class User implements UserDetails {
     private String uface;//头像
     private Integer ugrade;//分数
     private Integer ugold;//金币
+    private Integer user_roomId;//所在房间号
     private List<Role> roles;
 
     @Override
@@ -38,6 +39,13 @@ public class User implements UserDetails {
                 ", ugold=" + ugold +
                 ", roles=" + roles +
                 '}';
+    }
+
+    public Integer getUser_roomId() {
+        return user_roomId;
+    }
+    public void setUser_roomId(int roomId) {
+        this.user_roomId = roomId;
     }
 
     public String getName(){
@@ -59,6 +67,7 @@ public class User implements UserDetails {
     public void setUid(Integer uid) {
         this.uid = uid;
     }
+
 
     @Override
     @JsonIgnore

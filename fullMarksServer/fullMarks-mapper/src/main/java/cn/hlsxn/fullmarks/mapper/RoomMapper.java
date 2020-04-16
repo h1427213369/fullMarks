@@ -18,13 +18,37 @@ public interface RoomMapper {
         @Result(column = "roomId",property = "roomId"),
         @Result(column = "rlevel",property = "rlevel"),
         @Result(column = "roomNum",property = "roomNum"),
-        @Result(column = "rid",property = "users",javaType=List.class,
+        @Result(column = "roomId",property = "users",javaType=List.class,
                 many = @Many(select = "cn.hlsxn.fullmarks.mapper.UserMapper.findByRoomId",fetchType= FetchType.EAGER))
     })
     List<Room> getAll(Integer level);
+
+    /**
+     * 获得房间人数
+     * @param roomId
+     * @return
+     */
+    @Select("SELECT roomNum FROM room WHERE roomId = #{roomId}")
+    int getRoomNumByRid(@Param("roomId") int roomId);
+
+    /**
+     * 更新房间人数-1
+     */
+    @Update("UPDATE room SET roomNum = roomNum - 1 WHERE roomId = #{roomId}")
+    void updateSubtractRoomNum(@Param("roomId") int roomId);
+
+    /**
+     * 更新房间人数+1
+     */
+    @Update("UPDATE room SET roomNum = roomNum + 1 WHERE roomId = #{roomId}")
+    void updateAddRoomNum(@Param("roomId") int roomId);
 
     @Insert("INSERT INTO room(roomName,roomPassword,roomWay,room_userId,rlevel) " +
             " VALUES(#{room.roomName},#{room.roomPassword},#{room.roomWay},#{room.room_userId},#{room.rlevel})")
     @Options(useGeneratedKeys = true, keyProperty = "room.rid")
     void create(@Param("room") Room room);
+
+    @Select("SELECT room_userId FROM room WHERE roomId = #{roomId}")
+    int getUidByRoomId(Integer roomId);
+
 }

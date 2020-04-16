@@ -9,10 +9,10 @@ public class Room {
     private boolean roomWay;//加入方式 默认0 不加锁
     private boolean roomState;//房间状态 默认 0 房间人数未满可以加入
     private Integer roomNum;//房间人数
-    private int rlevel;//房间模式 默认0 普通模式
+    private Integer rlevel;//房间模式 默认0 普通模式
     private Integer room_userId;//房主id
     private Integer roomId;//房间号
-    private List<User> users;
+    private List<UserFriend> users;
 
     @Override
     public String toString() {
@@ -30,11 +30,11 @@ public class Room {
                 '}';
     }
 
-    public int getRlevel() {
+    public Integer getRlevel() {
         return rlevel;
     }
 
-    public void setRlevel(int rlevel) {
+    public void setRlevel(Integer rlevel) {
         this.rlevel = rlevel;
     }
 
@@ -47,11 +47,11 @@ public class Room {
     }
 
 
-    public List<User> getUsers() {
+    public List<UserFriend> getUsers() {
         return users;
     }
 
-    public void setUsers(List<User> users) {
+    public void setUsers(List<UserFriend> users) {
         this.users = users;
     }
 

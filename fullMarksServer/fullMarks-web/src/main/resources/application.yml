@@ -19,3 +19,5 @@ server:
     max-http-form-post-size: 50000000
 #logging:
 #  config: fullMarksServer/fullMarks-web/src/main/resources/log4j.properties
+#logging:
+#  config: classpath:log4j2.xml

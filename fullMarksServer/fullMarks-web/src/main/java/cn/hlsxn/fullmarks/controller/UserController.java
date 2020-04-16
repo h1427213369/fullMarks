@@ -20,9 +20,6 @@ public class UserController {
     @ResponseBody
     public String home() {
         List<User> users = userService.findAll();
-        for (User user : users) {
-            System.out.println(user);
-        }
         return "d:Hello World!";
     }
 

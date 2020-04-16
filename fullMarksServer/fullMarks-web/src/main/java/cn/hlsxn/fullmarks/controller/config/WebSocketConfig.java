@@ -3,7 +3,6 @@ package cn.hlsxn.fullmarks.controller.config;
 
 import cn.hlsxn.fullmarks.controller.chat.PrincipalHandshakeHandler;
 import cn.hlsxn.fullmarks.controller.chat.WebSocketDecoratorFactory;
-import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
@@ -25,10 +24,8 @@ public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
     @Autowired
     private PrincipalHandshakeHandler principalHandshakeHandler;
 
-    private static Logger log = Logger.getLogger(WebSocketConfig.class);
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
-        log.info("---------进入成功");
         registry.addEndpoint("/ws/ep")
                 .setAllowedOrigins("*")
                 .setHandshakeHandler(principalHandshakeHandler)
