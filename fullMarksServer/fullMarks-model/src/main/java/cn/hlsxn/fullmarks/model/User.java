@@ -1,6 +1,8 @@
 package cn.hlsxn.fullmarks.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -8,8 +10,10 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Objects;
 
 public class User implements UserDetails {
+    private static Logger log = LoggerFactory.getLogger(User.class);
     private Integer uid;
     private String username;//用户名
     private String upassword;//密码
@@ -39,6 +43,24 @@ public class User implements UserDetails {
                 ", ugold=" + ugold +
                 ", roles=" + roles +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+//        log.info("用户:" + username + "使用了equals");
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return Objects.equals(username, user.username);
+    }
+
+    @Override
+    public int hashCode() {
+//        298225121
+//        int hash = 0;
+//        hash += (this.username + this.uname).hashCode();
+//        log.info("用户:" + username  + "使用了hashCode:" + hash);
+        return Objects.hash(username,uname);
     }
 
     public Integer getUser_roomId() {

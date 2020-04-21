@@ -1,8 +1,6 @@
-package cn.hlsxn.fullmarks.controller.config;
+package cn.hlsxn.fullmarks.controller.chat;
 
 
-import cn.hlsxn.fullmarks.controller.chat.PrincipalHandshakeHandler;
-import cn.hlsxn.fullmarks.controller.chat.WebSocketDecoratorFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;

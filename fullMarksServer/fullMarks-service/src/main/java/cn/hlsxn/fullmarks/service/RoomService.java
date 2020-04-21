@@ -31,9 +31,9 @@ public class RoomService {
         List<Room> all = roomMapper.getAll(level);
         RespPageBean respPageBean = new RespPageBean();
         respPageBean.setData(all);
-        for (Room room : all) {
-            log.info("" + room);
-        }
+//        for (Room room : all) {
+//            log.info("" + room);
+//        }
         return respPageBean;
     }
 

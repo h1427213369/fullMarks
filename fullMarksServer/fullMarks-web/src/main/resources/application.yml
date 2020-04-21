@@ -14,9 +14,14 @@ spring:
     database: 0
     port: 6379
 server:
+  servlet:
+    session:
+      timeout: 1800
+  #登录失效超时时间 默认30 min 此处单位:s
   port: 8079
   tomcat:
     max-http-form-post-size: 50000000
+
 #logging:
 #  config: fullMarksServer/fullMarks-web/src/main/resources/log4j.properties
 #logging:

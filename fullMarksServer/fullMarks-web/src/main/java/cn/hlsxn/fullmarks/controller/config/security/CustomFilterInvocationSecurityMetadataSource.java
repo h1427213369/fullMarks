@@ -1,4 +1,4 @@
-package cn.hlsxn.fullmarks.controller.config;
+package cn.hlsxn.fullmarks.controller.config.security;
 
 import cn.hlsxn.fullmarks.model.Permission;
 import cn.hlsxn.fullmarks.model.Role;
