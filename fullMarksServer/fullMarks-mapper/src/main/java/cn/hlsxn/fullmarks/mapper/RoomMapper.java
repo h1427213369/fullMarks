@@ -51,4 +51,6 @@ public interface RoomMapper {
     @Select("SELECT room_userId FROM room WHERE roomId = #{roomId}")
     int getUidByRoomId(Integer roomId);
 
+    @Select("SELECT roomId FROM room WHERE rid = #{rid}")
+    int getRoomIdByRid(int rid);
 }

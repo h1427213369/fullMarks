@@ -1,6 +1,7 @@
 package cn.hlsxn.fullmarks.model;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 房间内通信
@@ -13,7 +14,9 @@ public class RoomMsg {
     private List<UserFriend> friends;//好友
     private int roomId;//房间号
     private List<UserFriend> players;//房间内的玩家
-
+    private List<Integer[]> boards;//所有玩家的牌
+    private List<Map<Integer,Integer>> grade;//玩家所叫的分数
+    private Integer count;//第几个玩家
 
     @Override
     public String toString() {
@@ -25,7 +28,34 @@ public class RoomMsg {
                 ", friends=" + friends +
                 ", roomId=" + roomId +
                 ", players=" + players +
+                ", boards=" + boards +
+                ", grade=" + grade +
+                ", count=" + count +
                 '}';
+    }
+
+    public List<Integer[]> getBoards() {
+        return boards;
+    }
+
+    public void setBoards(List<Integer[]> boards) {
+        this.boards = boards;
+    }
+
+    public List<Map<Integer, Integer>> getGrade() {
+        return grade;
+    }
+
+    public void setGrade(List<Map<Integer, Integer>> grade) {
+        this.grade = grade;
+    }
+
+    public Integer getCount() {
+        return count;
+    }
+
+    public void setCount(Integer count) {
+        this.count = count;
     }
 
     public String getUsername() {

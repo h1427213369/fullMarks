@@ -48,13 +48,17 @@ public class RoomService {
 
     public RespBean create(Authentication authentication, Room room){
         User currentUser = (User)authentication.getPrincipal();
+        //设置房主
         int uid = currentUser.getUid();
         room.setRoom_userId(uid);
         roomMapper.create(room);
+        //创建房间 并加入玩家
         int rid = room.getRid();
         room.setRoom_userId(uid);
+        //返回房间号
         userMapper.updateRid(rid,uid);
-        return RespBean.ok("创建成功");
+        int roomId = roomMapper.getRoomIdByRid(rid);
+        return RespBean.ok(""+roomId);
     }
 
     /**

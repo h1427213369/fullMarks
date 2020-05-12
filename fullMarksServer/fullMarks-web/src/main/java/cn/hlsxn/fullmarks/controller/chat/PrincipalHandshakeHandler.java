@@ -22,7 +22,7 @@ public class PrincipalHandshakeHandler  extends  DefaultHandshakeHandler {
                                       Map<String, Object> attributes) {
         // Generate principal with UUID as name
         User user = (User)SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        log.info("注册姓名:" + user.getUsername());
+        log.info("register Name:" + user.getUsername());
         return new StompPrincipal(user.getUsername());
     }
 }

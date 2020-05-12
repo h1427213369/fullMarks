@@ -18,5 +18,9 @@
         <module name="fullMarksweb" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ImgServer" target="1.8" />
+      <module name="imgServer" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
