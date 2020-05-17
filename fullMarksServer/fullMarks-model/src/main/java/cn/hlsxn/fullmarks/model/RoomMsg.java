@@ -1,7 +1,6 @@
 package cn.hlsxn.fullmarks.model;
 
 import java.util.List;
-import java.util.Map;
 
 /**
  * 房间内通信
@@ -15,8 +14,12 @@ public class RoomMsg {
     private int roomId;//房间号
     private List<UserFriend> players;//房间内的玩家
     private List<Integer[]> boards;//所有玩家的牌
-    private List<Map<Integer,Integer>> grade;//玩家所叫的分数
+    private List<Grade> grade;//玩家所叫的分数
     private Integer count;//第几个玩家
+    private Integer maxGrade;//当前叫的最大的分数
+    private Integer num;//副家获得的分数
+    private Integer masterIndex;//主家下标
+    private Integer masterBoard;//主牌
 
     @Override
     public String toString() {
@@ -31,7 +34,51 @@ public class RoomMsg {
                 ", boards=" + boards +
                 ", grade=" + grade +
                 ", count=" + count +
+                ",  maxGrade=" + maxGrade +
+                ", num=" + num +
+                ", masterIndex=" + masterIndex +
+                ", masterBoard=" + masterBoard +
                 '}';
+    }
+
+    public Integer getNum() {
+        return num;
+    }
+
+    public void setNum(Integer num) {
+        this.num = num;
+    }
+
+    public Integer getMasterIndex() {
+        return masterIndex;
+    }
+
+    public void setMasterIndex(Integer masterIndex) {
+        this.masterIndex = masterIndex;
+    }
+
+    public Integer getMasterBoard() {
+        return masterBoard;
+    }
+
+    public void setMasterBoard(Integer masterBoard) {
+        this.masterBoard = masterBoard;
+    }
+
+    public Integer getMaxGrade() {
+        return maxGrade;
+    }
+
+    public void setMaxGrade(Integer maxGrade) {
+        this.maxGrade = maxGrade;
+    }
+
+    public List<Grade> getGrade() {
+        return grade;
+    }
+
+    public void setGrade(List<Grade> grade) {
+        this.grade = grade;
     }
 
     public List<Integer[]> getBoards() {
@@ -40,14 +87,6 @@ public class RoomMsg {
 
     public void setBoards(List<Integer[]> boards) {
         this.boards = boards;
-    }
-
-    public List<Map<Integer, Integer>> getGrade() {
-        return grade;
-    }
-
-    public void setGrade(List<Map<Integer, Integer>> grade) {
-        this.grade = grade;
     }
 
     public Integer getCount() {
